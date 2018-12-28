@@ -5,8 +5,16 @@
   left: 0
   padding: 55px 0
   z-index: 10
+  +transition(1s)
+  +r(992)
+    padding: 25px 0
   .container
     display: flex
     align-items: center
+    +rmin(1471)
+      padding: 0 135px
   &__nav
     margin-left: auto
+  &.fixed
+    background-color: rgba(#000, 0.5)
+    padding: 25px 0
