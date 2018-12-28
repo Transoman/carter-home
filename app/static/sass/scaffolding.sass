@@ -99,15 +99,14 @@ a
     background-color: rgba(#000, 0.3)
     z-index: -1
     transform: translate(10px, 10px)
-    +transition
+    +transition(0.5s)
   &:hover
     color: #fff
     &::before
       transform: translate(0, 0)
       background-color: rgba(#000, 1)
   &:active
-    background-color: darken($accent, 5%)
-    color: rgba(255,255,255,.3)
+    color: #fff
   &[disabled]
     background-color: #e5e5e5
     cursor: not-allowed

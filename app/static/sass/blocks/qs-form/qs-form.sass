@@ -1,0 +1,18 @@
+.qs-form
+  padding: 120px 0
+  &__wrap
+    padding: 0 135px
+  &__form
+    display: flex
+    & > *:not(:last-child)
+      margin-right: 40px
+    .form-group
+      width: 120px
+      &:first-child
+        width: auto
+        flex-grow: 1
+    &-select
+      &-icon
+        +size(12px)
+        fill: $cod-gray
+        margin-right: 7px
