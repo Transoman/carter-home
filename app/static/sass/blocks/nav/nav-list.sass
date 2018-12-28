@@ -1,0 +1,27 @@
+.nav-list
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+  +r(992)
+    flex-direction: column
+    align-items: stretch
+    text-align: center
+  & > *:not(:last-child)
+    margin-right: 40px
+    +r(992)
+      margin-right: 0
+      margin-bottom: 10px
+  li
+    &:hover
+      a
+        color: rgba(#fff, 1)
+        +r(992)
+          color: rgba($main-color, 1)
+  a
+    font-size: 14px
+    text-transform: uppercase
+    color: rgba(#fff, 0.6)
+    +r(992)
+      color: rgba($main-color, 0.6)
