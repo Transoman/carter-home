@@ -1,0 +1,85 @@
+.s-services
+  padding: 0
+  +r(576)
+    padding: 50px 0
+    background-color: $wild-sand
+  &__wrap
+    padding: 110px 160px 80px
+    background-color: $wild-sand
+    +r(1471)
+      padding-right: 120px
+      padding-left: 120px
+    +r(1200)
+      padding-right: 60px
+      padding-left: 60px
+    +r(767)
+      padding-top: 50px
+      padding-bottom: 50px
+    +r(576)
+      padding: 0
+      background-color: none
+    // +r(480)
+    //   padding-right: 20px
+    //   padding-left: 20px
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    +r(992)
+      flex-direction: column
+      align-items: center
+  &__item
+    position: relative
+    width: 25%
+    padding-top: 85px
+    +r(1200)
+      width: 30%
+    +r(992)
+      width: 60%
+      text-align: center
+      padding-top: 60px
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+    +r(767)
+      width: 70%
+    +r(480)
+      width: 100%
+    p
+      font-size: 16px
+      margin-bottom: 30px
+      +r(992)
+        margin-bottom: 20px
+  &__icon
+    position: absolute
+    top: 0
+    left: 0
+    +r(992)
+      left: 50%
+      transform: translateX(-50%)
+  &__title
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    color: $cod-gray
+    letter-spacing: 2px
+  &__link
+    position: relative
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+    color: $cod-gray
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      height: 1px
+      background-color: $cod-gray
+      +transition
+      width: 0
+    &:hover
+      color: #000
+      &::after
+        width: 100%
+        left: 0
