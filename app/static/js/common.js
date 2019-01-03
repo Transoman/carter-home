@@ -34,13 +34,26 @@ jQuery(document).ready(function($) {
   });
 
   // Fixed header
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 10) {
+  var fixedHeader = function() {
+    if($(window).scrollTop() > 10) {
       $('.header').addClass('fixed');
     }
     else {
       $('.header').removeClass('fixed');
     }
+  }
+
+  fixedHeader();
+
+  $(window).scroll(function() {
+    fixedHeader();
+  });
+
+  $('.hero__content-list').cycle({
+    'slides':'>div',
+    'sync': false,
+    'timeout': 2000,
+    'speed': 1000
   });
 
 });

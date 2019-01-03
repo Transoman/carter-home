@@ -4,7 +4,7 @@
   right: 0
   left: 0
   padding: 55px 0
-  z-index: 10
+  z-index: 101
   +transition(1s)
   +r(992)
     padding: 25px 0
@@ -16,5 +16,23 @@
   &__nav
     margin-left: auto
   &.fixed
-    background-color: rgba(#000, 0.5)
+    background-color: #fff
     padding: 25px 0
+    box-shadow: 0 0 10px rgba(#000, 0.1)
+    +r(992)
+      padding: 15px 0
+    +r(576)
+      padding: 10px 0
+    .header__nav
+      .nav-list
+        a
+          color: rgba($cod-gray, 0.6)
+        li
+          &:hover
+            a
+              color: rgba($cod-gray, 1)
+    .nav-toggle
+      &__line
+        background-color: $cod-gray
+        &::before, &::after
+          background-color: $cod-gray
