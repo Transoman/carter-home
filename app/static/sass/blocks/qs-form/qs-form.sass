@@ -1,18 +1,54 @@
 .qs-form
   padding: 120px 0
+  +r(767)
+    padding: 50px 0
   &__wrap
-    padding: 0 135px
+    +rmin(1471)
+      padding: 0 135px
   &__form
     display: flex
+    +r(767)
+      flex-wrap: wrap
+      margin: 0 -15px
     & > *:not(:last-child)
       margin-right: 40px
+      +r(1200)
+        margin-right: 30px
+      +r(992)
+        margin-right: 20px
+      +r(767)
+        margin-bottom: 20px
+        margin-right: 0
     .form-group
       width: 120px
+      +r(992)
+        width: auto
+      +r(767)
+        width: 50%
+        padding: 0 15px
+        &:last-child
+          width: 100%
+          text-align: center
+      +r(576)
+        width: 100%
       &:first-child
         width: auto
         flex-grow: 1
+        +r(767)
+          width: 100%
+          margin-right: 0
     &-select
       &-icon
         +size(12px)
         fill: $cod-gray
         margin-right: 7px
+    &-dropdown
+      display: none
+  .form__btn
+    font-size: 12px
+    padding: 8px 33px
+    &::before
+      transform: translate(4px, 4px)
+    &:hover, &:focus
+      &::before
+        transform: translate(0, 0)

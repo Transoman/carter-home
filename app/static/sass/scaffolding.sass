@@ -107,10 +107,21 @@ a
       background-color: rgba(#000, 1)
   &:active
     color: #fff
+  &:focus
+    color: #fff
+    outline: none
+    &::before
+      transform: translate(0, 0)
+      background-color: rgba(#000, 1)
   &[disabled]
     background-color: #e5e5e5
     cursor: not-allowed
     color: #fff
+  &--black
+    border-color: $cod-gray
+    color: $cod-gray
+    &::before
+      background-color: rgba($cod-gray, 0.1)
 
 .container
   +rmin(1471)
