@@ -1,17 +1,48 @@
 .s-about
+  padding: 0
   &__wrap
-    padding: 180px 150px 160px 56.8%
-    background:
-      repeat: no-repaet
-      position: center top
-      size: cover
+    position: relative
+    // padding: 180px 150px 160px 56.8%
+    // background:
+    //   repeat: no-repeat
+    //   position: left top
+    //   size: cover
+    img
+      +r(992)
+        margin-bottom: 30px
   &__content
+    position: absolute
+    top: 50%
+    right: 160px
+    max-width: 445px
+    transform: translateY(-50%)
+    +r(1471)
+      right: 100px
+    +r(1200)
+      max-width: 330px
+    +r(992)
+      position: static
+      right: auto
+      top: auto
+      transform: none
+      max-width: none
     h2
       margin-bottom: 30px
+      +r(1200)
+        margin-bottom: 20px
+      +r(992)
+        text-align: center
     p
       font-size: 16px
+      +r(1200)
+        font-size: 14px
+      +r(767)
+        text-align: center
       &:last-of-type
         margin-bottom: 50px
     .btn
       max-width: 225px
       width: 100%
+      +r(992)
+        margin: 0 auto
+        display: block

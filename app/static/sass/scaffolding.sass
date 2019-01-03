@@ -19,6 +19,9 @@
 
 
 /* Common styles */
+html
+  overflow-x: hidden
+
 body
   margin: 0
   padding: 0
@@ -27,6 +30,7 @@ body
   font-size: 14px
   line-height: 1.7
   color: $main-color
+  overflow-x: hidden
 
 img
   max-width: 100%
@@ -47,8 +51,15 @@ h2
   font-size: 36px
   font-weight: 100
   color: $cod-gray
-  letter-spacing: 2.5px
+  letter-spacing: 7px
   text-transform: uppercase
+  line-height: 1
+  +r(576)
+    font-size: 26px
+    letter-spacing: 2px
+
+section
+  padding: 130px 0 140px
 
 a
   // color: $main-color
@@ -129,3 +140,7 @@ a
 .container
   +rmin(1471)
     max-width: 1470px
+
+.section-title
+  text-align: center
+  margin-bottom: 80px
