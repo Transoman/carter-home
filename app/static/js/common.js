@@ -49,11 +49,15 @@ jQuery(document).ready(function($) {
     fixedHeader();
   });
 
+  // Cycle content
   $('.hero__content-list').cycle({
     'slides':'>div',
     'sync': false,
     'timeout': 2000,
     'speed': 1000
   });
+
+  // Match height
+  $('.story__content h3').matchHeight();
 
 });
