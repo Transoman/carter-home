@@ -1,0 +1,94 @@
+.footer
+  padding: 110px 0
+  background-color: $mine-shaft
+  font-size: 12px
+  font-weight: 300
+  color: #fff
+  text-transform: uppercase
+  +r(767)
+    padding: 50px 0
+  &__wrap
+    display: flex
+    padding: 0 135px
+    +r(1471)
+      padding: 0
+    +r(992)
+      flex-wrap: wrap
+    +r(767)
+      flex-direction: column
+      align-items: center
+      text-align: center
+      & > *:not(:last-child)
+        margin-bottom: 30px
+  .container
+    position: relative
+  &__col
+    flex-shrink: 0
+    &--1
+      margin-right: 130px
+      padding-bottom: 100px
+      +r(1200)
+        margin-right: 80px
+      +r(992)
+        margin-right: 50px
+      +r(767)
+        margin-right: 0
+        padding: 0
+    &--2
+      margin-right: 130px
+      +r(1200)
+        margin-right: 80px
+      +r(767)
+        margin-right: 0
+    &--3
+      margin-right: 200px
+      max-width: 200px
+      +r(1200)
+        margin-right: 100px
+      +r(992)
+        margin-right: 0
+    &--4
+      +r(992)
+        width: 100%
+        margin-top: 30px
+        margin-bottom: 30px
+        text-align: center
+  &__logo
+    display: inline-block
+    margin-bottom: 30px
+  &__title
+    margin-bottom: 20px
+    font-weight: 300
+    color: $main-color
+    +r(767)
+      margin-bottom: 10px
+  &__about
+    & > *:not(:last-child)
+      margin-bottom: 30px
+      +r(767)
+        margin-bottom: 20px
+  &__journal
+    & > *:not(:last-child)
+      margin-bottom: 30px
+      +r(767)
+        margin-bottom: 20px
+    &-date
+      display: block
+      color: $main-color
+  &__nav
+    margin: 0
+    padding: 0
+    list-style: none
+    +r(992)
+      display: flex
+      justify-content: center
+    +r(480)
+      flex-direction: column
+    & > *:not(:last-child)
+      margin-bottom: 10px
+      +r(992)
+        margin-right: 15px
+        margin-bottom: 0
+      +r(480)
+        margin-right: 0
+        margin-bottom: 10px
