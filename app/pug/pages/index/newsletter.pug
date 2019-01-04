@@ -1,0 +1,17 @@
+section(style="background-image: url('static/images/content/newslleter-bg.jpg')").newsletter
+  .container
+    h2.section-title Newsletter
+    p.section-desc For exclusive news and market updates sign up for our newsletter.
+
+    .newsletter__form-wrap
+      form(action="#").newsletter__form.form
+        .form-group
+          input(type="text", name="news_name", placeholder="Name", required).form__field
+        .form-group
+          input(type="email", name="news_email", placeholder="Email", required).form__field
+        .form-group.form-group--btn
+          button(type="submit").btn.form__btn Submit
+
+
+
+// /.newsletter
