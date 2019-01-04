@@ -18,9 +18,6 @@
     +r(576)
       padding: 0
       background-color: none
-    // +r(480)
-    //   padding-right: 20px
-    //   padding-left: 20px
   &__list
     display: flex
     flex-wrap: wrap
@@ -45,15 +42,21 @@
       width: 70%
     +r(480)
       width: 100%
+    &:hover
+      .s-services__icon
+        transform: scale(1.5)
+        +r(992)
+          transform: translateX(-50%) scale(1.5)
     p
       font-size: 16px
       margin-bottom: 30px
       +r(992)
-        margin-bottom: 20px
+        margin-bottom: 10px
   &__icon
     position: absolute
     top: 0
     left: 0
+    +transition(0.5s)
     +r(992)
       left: 50%
       transform: translateX(-50%)
