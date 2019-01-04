@@ -1,0 +1,21 @@
+section.contact-form
+  .container
+    h2.visually-hidden Get in touch
+    img(src="static/images/content/get.svg", alt="", width="380").contact-form__img
+    p.section-desc with one of our buyer specialist today
+
+    .contact-form__form-wrap
+      form.contact-form__form.form
+        .form-group
+          input(type="text", name="name", placeholder="Your name", required).form__field
+        .form-group
+          input(type="email", name="email", placeholder="Your email", required).form__field
+        .form-group
+          input(type="tel", name="phone", placeholder="Your phone", required).form__field
+        .form-group
+          textarea(name="message", placeholder="Message").form__field
+        .form-group.form-group--btn
+          button(type="submit").btn.btn--black.form__btn Send
+
+
+// /.contact-form
