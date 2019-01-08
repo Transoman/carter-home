@@ -1,0 +1,67 @@
+.esc-process
+  .section-title
+    margin-bottom: 30px
+  .section-desc
+    margin-bottom: 80px
+    font-size: 16px
+  &__list
+    padding: 0 335px 0 185px
+    +r(1471)
+      padding: 0 180px 0 70px
+    +r(1200)
+      padding: 0
+  &__item
+    position: relative
+    margin-bottom: 55px
+    padding-left: 150px
+    padding-top: 25px
+    +r(992)
+      padding-left: 110px
+    +r(767)
+      padding: 0
+    &:last-child
+      margin-bottom: 0
+    p
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+    ul
+      padding-left: 60px
+      +r(576)
+        padding-left: 40px
+      & > *:not(:last-child)
+        margin-bottom: 10px
+  &__title
+    margin-bottom: 20px
+    font-size: 16px
+    font-weight: 400
+    text-transform: uppercase
+    color: $cod-gray
+  &__count
+    position: absolute
+    top: 0
+    left: 0
+    display: inline-block
+    color: $cod-gray
+    text-align: center
+    +r(767)
+      position: static
+      left: auto
+      top: auto
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 220px
+      height: 1px
+      background-color: $cod-gray
+      +r(767)
+        display: none
+    &-week
+      display: block
+      text-transform: uppercase
+    &-number
+      font-size: 36px
+      font-weight: 400
+      line-height: 1
