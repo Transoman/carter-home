@@ -1,0 +1,52 @@
+.join-tour
+  .section-title
+    margin-bottom: 25px
+  .section-desc
+    margin-bottom: 50px
+    font-size: 16px
+  &__form-wrap
+    padding: 0 235px
+    +r(1471)
+      padding: 0 100px
+    +r(1200)
+      padding: 0
+  &__form
+    .form-group
+      margin-bottom: 60px
+      +r(767)
+        margin-bottom: 40px
+      &--btn
+        +r(767)
+        text-align: center
+    p
+      margin-bottom: 25px
+      font-size: 13px
+      font-weight: 400
+    .form
+      &__field
+        color: rgba($main-color, 0.7)
+        &::placeholder
+          color: rgba($main-color, 0.7)
+      &__btn
+        padding: 8px 30px
+        float: right
+        +r(767)
+          float: none
+    &-row
+      display: flex
+      flex-wrap: wrap
+      margin-top: 6px
+      +r(767)
+        margin-top: 0
+        margin-bottom: 30px
+      +r(576)
+        flex-direction: column
+      .form-group
+        margin-bottom: 0
+      & > *:not(:last-child)
+        margin-right: 50px
+        +r(1200)
+          margin-right: 40px
+        +r(576)
+          margin-right: 0
+          margin-bottom: 5px

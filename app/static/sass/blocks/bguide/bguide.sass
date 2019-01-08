@@ -1,0 +1,100 @@
+.bguide
+  padding: 0
+  +r(576)
+    padding: 50px 0
+    background-color: $wild-sand
+  .section-title
+    margin-bottom: 30px
+  .section-desc
+    max-width: 830px
+    margin: 0 auto 80px
+  &__wrap
+    padding: 100px 165px 130px
+    background-color: $wild-sand
+    +r(1471)
+      padding-right: 120px
+      padding-left: 120px
+    +r(1200)
+      padding-right: 60px
+      padding-left: 60px
+    +r(576)
+      padding: 0
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+    &:nth-child(even)
+      flex-direction: row-reverse
+  &__img-wrap
+    +r(992)
+      margin-bottom: 20px
+  &__content
+    padding: 0 120px 0 60px
+    +r(1471)
+      padding: 0 60px 0 40px
+    +r(1200)
+      padding: 0
+    +r(767)
+      text-align: center
+  &__title
+    margin-bottom: 15px
+    font-size: 20px
+    font-weight: 300
+    color: $cod-gray
+    text-transform: uppercase
+    letter-spacing: 1px
+  &__link
+    position: relative
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    color: $cod-gray
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      height: 1px
+      background-color: $cod-gray
+      +transition
+      width: 0
+    &:hover
+      color: #000
+      &::after
+        width: 100%
+        left: 0
+  &__modal
+    &-hero
+      position: relative
+      padding: 100px 0
+      background:
+        repeat: no-repeat
+        position: center
+        size: cover
+        color: $cod-gray
+      color: #fff
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: rgba($cod-gray, 0.6)
+        z-index: -1
+      h3
+        font-size: 36px
+        font-weight: 300
+        text-transform: uppercase
+        letter-spacing: 2px
+        color: #fff
+        text-align: center
+        +r(576)
+          font-size: 24px
+    &-content
+      padding: 50px 30px
+      +r(576)
+        padding: 30px 15px
