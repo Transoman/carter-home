@@ -1,9 +1,7 @@
 let gp = require('gulp-load-plugins')(),
-    // uglify = require('gulp-uglify'),
-    // concat = require('gulp-concat'),
     scriptsPATH = {
         "input": "./app/static/js/",
-        "ouput": "./build/static/js/"
+        "ouput": "../carters-home/static/js/"
     };
 
 module.exports = function () {
@@ -14,7 +12,9 @@ module.exports = function () {
             'node_modules/jquery-popup-overlay/jquery.popupoverlay.js',
             'node_modules/jquery-validation/dist/jquery.validate.min.js',
             'app/static/js/jquery.cycle2.min.js',
-            'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js'
+            'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+            'node_modules/tabslet/jquery.tabslet.min.js',
+            'node_modules/swiper/dist/js/swiper.min.js'
             ])
             .pipe(gp.concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
@@ -27,7 +27,9 @@ module.exports = function () {
             'node_modules/jquery-popup-overlay/jquery.popupoverlay.js',
             'node_modules/jquery-validation/dist/jquery.validate.min.js',
             'app/static/js/jquery.cycle2.min.js',
-            'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js'
+            'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+            'node_modules/tabslet/jquery.tabslet.min.js',
+            'node_modules/swiper/dist/js/swiper.min.js'
             ])
             .pipe(gp.concat('libs.min.js'))
             .pipe(gp.uglify())

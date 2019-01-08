@@ -1,6 +1,7 @@
 module.exports = function () {
     $.gulp.task('watch', function () {
         $.gulp.watch('./app/pug/**/*.pug', $.gulp.series('pug'));
+        $.gulp.watch('../carters-home/**/*.php', $.browserSync.reload);
         $.gulp.watch('./app/static/fonts/**/*.*', $.gulp.series('fonts'));
         $.gulp.watch('./app/static/sass/**/*.sass', $.gulp.series('styles:dev'));
         $.gulp.watch(['./app/static/images/general/**/*.{png,jpg,gif,svg}',

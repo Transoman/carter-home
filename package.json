@@ -47,6 +47,8 @@
     "jquery-match-height": "^0.7.2",
     "jquery-popup-overlay": "^1.7.4",
     "jquery-validation": "^1.19.0",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "swiper": "^4.4.6",
+    "tabslet": "^1.7.3"
   }
 }

@@ -1,11 +1,4 @@
 let gp = require('gulp-load-plugins')();
-    // plumber = require('gulp-plumber'),
-    // pug = require('gulp-pug'),
-    // pugInheritance = require('gulp-pug-inheritance'),
-    // changed = require('gulp-changed'),
-    // cached = require('gulp-cached'),
-    // gulpif = require('gulp-if'),
-    // filter = require('gulp-filter');
 
 module.exports = function () {
     $.gulp.task('pug', () => {
@@ -20,7 +13,7 @@ module.exports = function () {
             .pipe(gp.pug({
                 pretty: true
             }))
-            .pipe($.gulp.dest('./build/'))
+            .pipe($.gulp.dest('../carters-home/'))
             .on('end', $.browserSync.reload);
     });
 };

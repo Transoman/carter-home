@@ -1,0 +1,58 @@
+.calc-home
+  .section-desc
+    max-width: 770px
+    margin: 0 auto 80px
+  &__tabs
+    +rmin(1471)
+      margin: 0 135px
+    &-list
+      border: 1px solid $gallery
+      
+      // padding-right: 1px
+    &-item
+      position: relative
+      height: auto
+      padding: 60px 30px 25px
+      border-right: 1px solid $gallery
+      +transition
+      cursor: pointer
+      +r(1200)
+        padding-right: 25px
+        padding-left: 25px
+      &:last-child
+        border-right: 0
+      &:hover, &.active
+        background-color: $cod-gray
+        border-color: $cod-gray
+        .calc-home__tabs-title
+          color: #fff
+        svg
+          fill: #fff
+      svg
+        position: absolute
+        top: 20px
+        left: 30px
+        width: 26px
+        height: 26px
+        fill: $cod-gray
+        +transition
+        +r(1200)
+          left: 25px
+    &-title
+      display: block
+      font-weight: 400
+      color: $cod-gray
+      letter-spacing: 0.5px
+      line-height: 1.3
+      +transition
+    &-content
+      display: none
+      padding: 50px 15px
+      text-align: center
+      +r(480)
+        padding: 30px 15px
+      & > p
+        max-width: 770px
+        margin: 0 auto
+      &.active
+        display: block

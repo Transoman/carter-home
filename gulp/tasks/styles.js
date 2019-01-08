@@ -1,14 +1,8 @@
 let gp = require('gulp-load-plugins')(),
-    // plumber = require('gulp-plumber'),
-    // scss = require('gulp-sass'),
     autoprefixer = require('autoprefixer')
-    // csso = require('gulp-csso'),
-    // csscomb = require('gulp-csscomb'),
-    // sourcemaps = require('gulp-sourcemaps'),
-    // rename = require('gulp-rename'),
     stylesPATH = {
         "input": "./app/static/sass/",
-        "ouput": "./build/static/css/"
+        "ouput": "../carters-home/static/css/"
     };
 
 module.exports = function () {

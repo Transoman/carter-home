@@ -60,4 +60,34 @@ jQuery(document).ready(function($) {
   // Match height
   $('.story__content h3').matchHeight();
 
+  // Tabs
+  // $('.calc-home__tabs').tabslet({
+  //   animation: true
+  // });
+
+  $('.calc-home__tabs-list').on('click', '.calc-home__tabs-item:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('.calc-home__tabs').find('.calc-home__tabs-content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
+  new Swiper ('.calc-home__tabs-list', {
+    slidesPerView: 5,
+    allowTouchMove: false,
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        allowTouchMove: true,
+      },
+      767: {
+        slidesPerView: 2,
+        allowTouchMove: true,
+      },
+      480: {
+        slidesPerView: 1,
+        allowTouchMove: true,
+      },
+    }
+  });
+
 });
