@@ -1,0 +1,80 @@
+.listing-prep-list
+  display: flex
+  padding: 0 205px 0 160px
+  +r(1471)
+    padding: 0
+  +r(992)
+    flex-direction: column
+  &__imgs
+    position: relative
+    max-width: 540px
+    width: 100%
+    flex-shrink: 0
+    margin-right: 100px
+    // min-height: 450px
+    +r(1200)
+      // max-width: 470px
+      // min-height: auto
+    +r(992)
+      margin: 0 auto 30px
+    div
+      position: absolute
+      top: 0
+      left: 0
+      +transition(1s)
+      &[data-pos="1"]
+        z-index: 1
+      &[data-pos="2"]
+        z-index: 0
+        transform: translateY(50px) scale(0.9)
+        opacity: 0.6
+        +r(767)
+          transform: translateY(40px) scale(0.9)
+        +r(480)
+          transform: translateY(30px) scale(0.9)
+      &[data-pos="3"]
+        z-index: -1
+        transform: translateY(100px) scale(0.8)
+        opacity: 0.3
+        +r(767)
+          transform: translateY(80px) scale(0.8)
+        +r(480)
+          transform: translateY(60px) scale(0.8)
+    canvas
+      width: 100%
+      margin-top: 60px
+  &__item
+    position: relative
+    margin-bottom: 50px
+    padding-left: 30px
+    cursor: pointer
+    border-left: 1px solid transparent
+    +transition
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -50px
+      width: 50px
+      height: 1px
+      background-color: $cod-gray
+      opacity: 0
+      visibility: hidden
+      +transition
+      +r(992)
+        display: none
+    &:last-child
+      margin-bottom: 0
+    &:hover, &.active
+      border-color: $cod-gray
+      &::before
+        opacity: 1
+        visibility: visible
+      h3
+        font-weight: 400
+    h3
+      font-size: 20px
+      font-weight: 300
+      color: $cod-gray
+      text-transform: uppercase
+      +transition
