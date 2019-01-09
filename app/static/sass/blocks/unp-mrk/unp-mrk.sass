@@ -1,0 +1,94 @@
+.unp-mrk
+  padding-top: 0
+  .section-title
+    margin-bottom: 30px
+  .section-desc
+    margin-bottom: 80px
+    +r(767)
+      margin-bottom: 40px
+  &__row
+    display: flex
+    // align-items: center
+    background-color: $wild-sand
+    +r(992)
+      flex-direction: column
+    &:nth-child(even)
+      flex-direction: row-reverse
+      +r(992)
+        flex-direction: column
+      .unp-mrk__col:nth-child(2)
+        align-self: flex-end
+        +r(767)
+          padding-bottom: 0
+        .unp-mrk__content
+          padding-bottom: 0
+  &__col
+    position: relative
+    flex: 0 0 50%
+    width: 50%
+    min-height: 500px
+    padding-top: 135px
+    z-index: 1
+    +r(1200)
+      min-height: 350px
+      padding-top: 100px
+    +r(992)
+      flex: 0 0 100%
+      width: 100%
+      text-align: center
+    +r(767)
+      min-height: auto
+      padding: 50px 15px
+    p
+      &:last-child
+        margin-bottom: 0
+    canvas
+      display: block
+      width: 100%
+      background:
+        repeat: no-repeat
+        position: center
+        size: cover
+    &--bg
+      color: #fff
+      background:
+        repeat: no-repeat
+        position: center
+        size: cover
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: rgba($cod-gray, 0.6)
+        z-index: -1
+      .unp-mrk__title
+        color: #fff
+  &__photo-content
+    // position: absolute
+    // top: 15px
+    // right: 15px
+    // bottom: 15px
+    // left: 15px
+    max-width: 400px
+    margin: 0 auto
+    // display: flex
+    // flex-direction: column
+    // justify-content: center
+  &__content
+    max-width: 400px
+    margin: 0 auto
+    img
+      margin-top: 50px
+    +r(992)
+    // padding: 15px
+  &__title
+    margin-bottom: 15px
+    font-size: 20px
+    font-weight: 300
+    color: $cod-gray
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 1.3
