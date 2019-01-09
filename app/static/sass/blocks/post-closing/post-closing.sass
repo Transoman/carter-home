@@ -1,0 +1,35 @@
+.post-closing
+  position: relative
+  padding: 180px 0 210px
+  background:
+    repeat: no-repeat
+    size: cover
+    position: center
+    color: $main-color
+  color: #fff
+  z-index: 1
+  +r(767)
+    padding: 50px 0
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba($cod-gray, 0.3)
+    z-index: -1
+  .section-title
+    margin-bottom: 30px
+    color: #fff
+  .section-desc
+    margin-bottom: 70px
+    +r(767)
+      margin-bottom: 40px
+  &__content
+    max-width: 770px
+    margin: 0 auto
+    text-align: center
+    p
+      &:last-child
+        margin-bottom: 0
