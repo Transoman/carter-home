@@ -1,0 +1,63 @@
+.testimonial-slider
+  +r(576)
+    padding-top: 40px
+  &__item
+    padding: 0 200px
+    +r(1471)
+      padding: 0 150px
+    +r(992)
+      padding: 0 70px
+    +r(576)
+      padding: 0
+  &__content
+    margin: 0
+    padding: 0
+    p
+      &:last-of-type
+        margin-bottom: 0
+  &__author
+    display: inline-block
+    margin-top: 40px
+    font-size: 15px
+    font-weight: 400
+    font-style: normal
+    color: $cod-gray
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  .swiper-button-prev,
+  .swiper-button-next
+    background: none
+    width: auto
+    height: auto
+    margin-top: 0
+    top: 0
+    font-size: 11px
+    font-weight: 400
+    color: $cod-gray
+    text-transform: uppercase
+    +transition
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      height: 1px
+      width: 100px
+      background-color: $cod-gray
+      +transition
+      +r(992)
+        width: 50px
+    &.swiper-button-disabled
+      opacity: 0
+    &:hover
+      &::before
+        width: 0
+    &:focus
+      outline: none
+  .swiper-button-prev
+    left: 0
+    &::before
+      left: 0
+  .swiper-button-next
+    right: 0
+    &::before
+      right: 0

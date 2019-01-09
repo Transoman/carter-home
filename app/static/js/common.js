@@ -89,4 +89,13 @@ jQuery(document).ready(function($) {
       },
     }
   });
+
+  new Swiper ('.testimonial-slider', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 });

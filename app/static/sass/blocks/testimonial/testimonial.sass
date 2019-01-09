@@ -1,88 +1,13 @@
+@import 'testimonial-slider'
+
 .testimonial
-  padding-bottom: 160px
-  background-color: $wild-sand
-  +r(767)
-    padding-bottom: 90px
+  padding-top: 0
   .section-title
-    display: flex
-    flex-direction: column
-    margin-right: 175px
-    margin-bottom: 0
-    font-size: 60px
+    margin-bottom: 60px
     text-align: left
-    line-height: 1.3
-    +r(1471)
-      margin-right: 85px
+    margin-left: 200px
+    +r(1741)
+      margin-left: 150px
     +r(992)
-      display: block
-      margin-right: 0
-      margin-bottom: 80px
-      font-size: 36px
+      margin-left: 0
       text-align: center
-    +r(576)
-      font-size: 26px
-      margin-bottom: 40px
-    span
-      &:nth-child(2)
-        margin-left: 130px
-        +r(992)
-          margin: 0
-      &:nth-child(3)
-        margin-left: 70px
-        +r(992)
-          margin: 0
-  &__row
-    display: flex
-    align-items: center
-    padding-left: 135px
-    +r(1200)
-      padding-left: 0
-    +r(992)
-      display: block
-  &__quote
-    position: relative
-    max-width: 570px
-    margin: 0
-    padding: 80px 90px 100px
-    font-size: 15px
-    color: $cod-gray
-    border-radius: 16px
-    z-index: 1
-    +r(992)
-      margin: 0 auto
-    +r(576)
-      padding: 40px
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      background-color: #fff
-      border-radius: 16px
-      transform: translate(30px, 30px)
-      z-index: -1
-      +r(576)
-        transform: translate(10px, 10px)
-    &::after
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      border-radius: 16px
-      border: 1px solid $cod-gray
-      z-index: -1
-  &__author
-    position: absolute
-    bottom: -10px
-    right: 70px
-    padding: 0 45px
-    font-size: 16px
-    font-weight: 400
-    font-style: normal
-    color: $cod-gray
-    line-height: 1.2
-    background-color: #fff
