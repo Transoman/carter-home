@@ -1,0 +1,163 @@
+.advantages-list
+  position: relative
+  min-height: 510px
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-start
+  padding: 0 135px
+  margin: 0 -15px
+  +r(1471)
+    padding: 0
+  +r(767)
+    min-height: auto
+    margin: 0
+  &__img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    p
+      font-size: 24px
+      font-weight: 400
+      color: $cod-gray
+      text-transform: uppercase
+    +r(767)
+      display: none
+  &__item
+    position: relative
+    width: 400px
+    padding: 0 15px
+    cursor: pointer
+    +r(1200)
+      width: 320px
+    +r(992)
+      width: 240px
+    +r(767)
+      width: 100%
+      margin-bottom: 10px
+      padding: 0
+      padding-left: 10px
+      &::before
+        content: ''
+        position: absolute
+        top: 8px
+        left: 0
+        +size(4px)
+        border-radius: 50%
+        background-color: $cod-gray
+      &:last-child
+        margin-bottom: 0
+    &:hover
+      .advantages-list
+        &__inner
+          +rmin(768)
+            background-color: $cod-gray
+            &::before
+              background-color: $cod-gray
+        &__title
+          +rmin(768)
+            display: none
+        &__content
+          +rmin(768)
+            display: block
+            color: #fff
+    &:nth-child(2)
+      .advantages-list__inner
+        &::before
+          transform: rotate(35deg)
+          transform-origin: 0 0
+          bottom: 17px
+          right: -25px
+    &:nth-child(3)
+      .advantages-list__inner
+        &::before
+          bottom: 0
+          left: 50%
+          transform: translateX(-50%) rotate(90deg)
+    &:nth-child(4)
+      .advantages-list__inner
+        &::before
+          transform: rotate(-35deg)
+          transform-origin: 0 0
+          bottom: -15px
+          left: -20px
+    &:nth-child(5)
+      .advantages-list__inner
+        &::before
+          top: 50%
+          right: -25px
+          transform: translateY(-50%)
+    &:nth-child(6)
+      margin-left: 400px
+      +r(1200)
+        margin-left: 320px
+      +r(992)
+        margin-left: 240px
+      +r(767)
+        margin-left: 0
+      .advantages-list__inner
+        &::before
+          top: 50%
+          left: -25px
+          transform: translateY(-50%)
+    &:nth-child(7)
+      .advantages-list__inner
+        &::before
+          transform: rotate(-35deg)
+          transform-origin: 0 0
+          top: 17px
+          right: -25px
+    &:nth-child(8)
+      .advantages-list__inner
+        &::before
+          top: 0
+          left: 50%
+          transform: translateX(-50%) rotate(90deg)
+    &:nth-child(9)
+      .advantages-list__inner
+        &::before
+          transform: rotate(35deg)
+          transform-origin: 0 0
+          top: -15px
+          left: -20px
+  &__inner
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 150px
+    padding: 45px 50px
+    z-index: 1
+    +transition
+    +r(1200)
+      padding: 30px
+    +r(767)
+      display: block
+      min-height: auto
+      padding: 0
+      text-align: left
+    &::before
+      content: ''
+      position: absolute
+      width: 50px
+      height: 2px
+      background-color: $gallery
+      z-index: -1
+      +transition
+      +r(767)
+        display: none
+  &__content
+    display: none
+    p
+      margin: 0
+    +r(767)
+      display: block
+  &__title
+    display: block
+    font-size: 15px
+    font-weight: 400
+    color: $cod-gray
+    text-align: center
+    +r(767)
+      text-align: left
