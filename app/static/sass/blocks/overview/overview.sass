@@ -1,0 +1,35 @@
+.overview
+  .section-title
+    margin-bottom: 30px
+    text-align: left
+    +r(992)
+      text-align: center
+  &__wrap
+    padding: 0 135px
+    +r(1200)
+      padding: 0
+  &__desc
+    +r(992)
+      margin-bottom: 40px
+  &__population
+    border-left: 1px solid $cod-gray
+    padding-left: 40px
+    &-item
+      margin-bottom: 20px
+      font-weight: 400
+      color: $cod-gray
+      &:last-child
+        margin-bottom: 0
+    &-title
+      margin-bottom: 0
+      text-transform: uppercase
+    &-number
+      font-size: 24px
+      line-height: 1.2
+      &--big
+        font-size: 48px
+
+.community-overview
+  padding-bottom: 0
+  +r(767)
+    padding-bottom: 50px
