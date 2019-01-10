@@ -14,7 +14,8 @@ module.exports = function () {
             'app/static/js/jquery.cycle2.min.js',
             'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
             'node_modules/tabslet/jquery.tabslet.min.js',
-            'node_modules/swiper/dist/js/swiper.min.js'
+            'node_modules/swiper/dist/js/swiper.min.js',
+            'app/static/js/acf-map.js'
             ])
             .pipe(gp.concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
@@ -29,7 +30,8 @@ module.exports = function () {
             'app/static/js/jquery.cycle2.min.js',
             'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
             'node_modules/tabslet/jquery.tabslet.min.js',
-            'node_modules/swiper/dist/js/swiper.min.js'
+            'node_modules/swiper/dist/js/swiper.min.js',
+            'app/static/js/acf-map.js'
             ])
             .pipe(gp.concat('libs.min.js'))
             .pipe(gp.uglify())

@@ -61,9 +61,9 @@ jQuery(document).ready(function($) {
   $('.story__content h3').matchHeight();
 
   // Tabs
-  // $('.calc-home__tabs').tabslet({
-  //   animation: true
-  // });
+  $('.sguide__tabs').tabslet({
+    animation: true
+  });
 
   $('.calc-home__tabs-list').on('click', '.calc-home__tabs-item:not(.active)', function() {
     $(this)

@@ -1,0 +1,29 @@
+.sguide
+  &__tabs
+    &-list
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+      margin: 0 0 70px
+      padding: 0
+      list-style: none
+      +r(767)
+        margin-bottom: 40px
+      li
+        border: 1px solid transparent
+        margin-left: -1px
+        +transition
+        &.active, &:hover
+          border-color: $cod-gray
+      a
+        display: block
+        padding: 12px 15px 10px
+        font-size: 13px
+        font-weight: 400
+        color: $cod-gray
+        text-transform: uppercase
+        line-height: 1.5
+    &-content
+      max-width: 770px
+      margin: 0 auto
