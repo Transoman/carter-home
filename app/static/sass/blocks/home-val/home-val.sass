@@ -1,0 +1,50 @@
+.home-val
+  .section-title
+    margin-bottom: 30px
+  .section-desc
+    margin-bottom: 70px
+    +r(767)
+      margin-bottom: 40px
+  &__form
+    .form__row
+      margin-bottom: 50px
+      &:nth-child(3)
+        align-items: flex-end
+        margin-bottom: 0
+      +r(992)
+        flex-wrap: wrap
+        margin: 0
+      & > *:not(:last-child)
+        margin-right: 40px
+        +r(992)
+          margin-right: 0
+      
+    .form-group
+      +r(992)
+        margin-bottom: 30px
+    &-adr
+      width: 35.04%
+      +r(992)
+        width: 100%
+    &-zp, &-beds, &-baths
+      width: 10.25%
+      +r(992)
+        width: 100%
+    &-pt
+      width: 20.5%
+      +r(992)
+        width: 100%
+    &-name, &-email, &-phone
+      width: 20.5%
+      +r(992)
+        width: 100%
+    .form-group--btn
+      flex-grow: 1
+      +r(992)
+        width: 100%
+        margin-bottom: 0
+        text-align: center
+    .form__btn
+      width: 100%
+      +r(992)
+        max-width: 320px
