@@ -1,0 +1,63 @@
+.other-community-slider
+  padding: 0 40px
+  +r(576)
+    padding: 40px 0 0
+  &__item
+    &:hover
+      .other-community-slider
+        &__img-wrap
+          img
+            transform: scale(1.1)
+  &__img-wrap
+    margin-bottom: 20px
+    overflow: hidden
+    img
+      width: 100%
+      +transition(1s)
+  &__title
+    margin: 0
+    font-weight: 400
+    color: $cod-gray
+    text-transform: uppercase
+    letter-spacing: 0.75px
+  .swiper-button-prev,
+  .swiper-button-next
+    background: none
+    width: auto
+    height: auto
+    margin-top: 0
+    top: 50%
+    font-size: 11px
+    font-weight: 400
+    color: $cod-gray
+    text-transform: uppercase
+    transform: translateY(-200%)
+    +transition
+    +r(576)
+      top: 0
+      transform: none
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      height: 1px
+      width: 60px
+      background-color: $cod-gray
+      +transition
+      +r(992)
+        width: 50px
+    &.swiper-button-disabled
+      opacity: 0
+    &:hover
+      &::before
+        width: 0
+    &:focus
+      outline: none
+  .swiper-button-prev
+    left: 0
+    &::before
+      left: 0
+  .swiper-button-next
+    right: 0
+    &::before
+      right: 0

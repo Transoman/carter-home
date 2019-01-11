@@ -98,6 +98,27 @@ jQuery(document).ready(function($) {
     },
   });
 
+  new Swiper ('.other-community-slider', {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    speed: 1000,
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+      },
+      767: {
+        slidesPerView: 1,
+      },
+    }
+  });
+
   $('.listing-prep-list__item').hover(function(e) {
     $(this).addClass('active').siblings().removeClass('active');
 
