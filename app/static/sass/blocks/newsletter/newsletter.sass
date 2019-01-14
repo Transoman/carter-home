@@ -1,4 +1,5 @@
 .newsletter
+  position: relative
   padding-bottom: 160px
   padding-top: 140px
   color: #fff
@@ -7,8 +8,18 @@
     repeat: no-repeat
     position: center
     size: cover
+  z-index: 1
   +r(767)
     padding: 50px 0
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba($cod-gray, 0.6)
+    z-index: -1
   .section-title
     margin-bottom: 15px
     color: #fff
@@ -32,13 +43,17 @@
         border: 0
         background-color: #fff
         font-size: 14px
-        // line-height: 1
         color: $main-color
       &__btn
         padding-right: 80px
         padding-left: 80px
+        color: #fff
+        &::after
+          border-color: #fff
   &--inner
     color: $main-color
+    &::before
+      display: none
     .section-head
       margin-bottom: 50px
       +r(767)
@@ -62,3 +77,9 @@
       .form-group--btn
         margin-top: 0
         margin-bottom: 0
+      .form__btn
+        color: $cod-gray
+        &::after
+          border-color: $cod-gray
+        &:hover, &:focus
+          color: #fff
