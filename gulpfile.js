@@ -16,12 +16,12 @@ $.path.task.forEach(function (taskPath) {
 $.gulp.task('dev', $.gulp.series(
     // 'clean',
     $.gulp.parallel(
-        'pug',
+        // 'pug',
         'fonts',
-        'styles:dev',
-        'img:dev',
-        'libsJS:dev',
-        'js:dev',
+        'styles:build-min',
+        // 'img:dev',
+        'libsJS:build',
+        'js:build-min',
         'svg'
     )
 ));

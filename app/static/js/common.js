@@ -1,5 +1,11 @@
 jQuery(document).ready(function($) {
 
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 0
+  });
+
   // Toggle nav menu
   var overlay = $('.overlay');
   $('.nav-toggle').on('click', function (e) {
@@ -54,7 +60,7 @@ jQuery(document).ready(function($) {
     'slides':'>div',
     'sync': false,
     'timeout': 2000,
-    'speed': 1000
+    'speed': 2000
   });
 
   // Match height
